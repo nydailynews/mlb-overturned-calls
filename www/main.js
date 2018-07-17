@@ -1,0 +1,1 @@
+new Tablesort(document.getElementById('teams-2018'));
