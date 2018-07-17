@@ -44,3 +44,22 @@ th[role=columnheader]:not(.no-sort):hover:after {
 	visibility: visible;
 	opacity: 1;
 }
+
+table {
+    font-family: 'Open Sans', sans-serif;
+}
+table thead th {
+    font-weight: bold;
+    padding: 0 10px;
+    line-height: 14px;
+}
+tr > td {
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+tr > td:first-child {
+    /* The first column on each row */
+    text-align: left;
+    font-size: 16px;
+}
