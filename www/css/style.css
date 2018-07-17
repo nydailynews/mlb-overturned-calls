@@ -47,11 +47,13 @@ th[role=columnheader]:not(.no-sort):hover:after {
 
 table {
     font-family: 'Open Sans', sans-serif;
+    border: 2px solid #eeeefe;
 }
 table thead th {
     font-weight: bold;
-    padding: 0 10px;
+    padding: 5px 10px;
     line-height: 14px;
+    text-align: left;
 }
 tr > td {
     padding: 5px;
@@ -62,4 +64,10 @@ tr > td:first-child {
     /* The first column on each row */
     text-align: left;
     font-size: 16px;
+}
+tr th {
+    background-color: #eeeeee;
+}
+tr:nth-child(even) {
+    background-color: #eeeefe;
 }
