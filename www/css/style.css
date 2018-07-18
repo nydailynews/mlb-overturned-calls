@@ -52,12 +52,7 @@ article h1 {
     letter-spacing: 0.5px;
 }
 
-article h3 {
-    font: bold 25px "Open Sans Condensed", sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: black;
-}
+
 
 article h4 {
     font: bold 14px "Open Sans", sans-serif;
@@ -71,6 +66,14 @@ main p {
     font: normal 17px "PT Serif", serif;
     line-height: 25px;
     margin-top: 15px;
+    text-align: left;
+}
+
+article h2 {
+    font: bold 25px "Open Sans Condensed", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: black;
 }
 
 div.intro p#datestamp + p:first-letter {
@@ -182,6 +185,7 @@ th[role=columnheader]:not(.no-sort):after {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
+	
 }
 
 th[aria-sort=ascending]:not(.no-sort):after {
@@ -208,6 +212,7 @@ table thead th {
     padding: 5px 10px;
     line-height: 14px;
     text-align: left;
+    font-size: 14px;
 }
 tr > td {
     padding: 10px;
