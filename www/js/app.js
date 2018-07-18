@@ -32,8 +32,16 @@ var compare = {
 
 
 	},
-	init: function() {
-		// prepopulate homepage with mets and yankees
+
+	init:function() {
+		// prepopulate homepage with mets and yankees  
+		// var select = document.getElementById ("team-one");
+		var option=document.getElementById('team-one').value="Yankees";
+		this.add_team_table("Yankees")
+		var option=document.getElementById('team-two').value="Mets";
+		this.add_team_table("Mets")
+     
 
 	}
 };
+compare.init();
