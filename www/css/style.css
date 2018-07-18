@@ -1,16 +1,3 @@
-/*table {
-  font-family: 'Raleway', sans-serif;
-  border: 1px solid #CCCCCC;
-  border-collapse: collapse;
-  align-content: center;
-}
-
-td, th {
-  border: 1px solid #CCCCCC;
-  text-align: center;
-  padding: 10px;
-}*/
-
 th[role=columnheader]:not(.no-sort) {
 	cursor: pointer;
 }
