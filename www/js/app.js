@@ -12,7 +12,14 @@ new Tablesort(document.getElementById('teams-overall'));
 
 var compare = {
 	table: document.getElementById('teams-compare'),
+	form_handler: function (select) {
+		//this inputs data
+		console.log(select)
+		var option = select.options[select.selectedIndex].value;
+		console.log(option)
+		this.add_team_table(option)
 
+	},
 	add_team_table: function(team) {
 		// this allows you to get data for one team.
 		// The variable team should be a string that is a baseball team (example: "Yankees")
@@ -27,5 +34,6 @@ var compare = {
 	},
 	init: function() {
 		// prepopulate homepage with mets and yankees
+
 	}
 };
