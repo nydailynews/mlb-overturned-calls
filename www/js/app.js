@@ -25,10 +25,13 @@ var compare = {
 		// this allows you to get data for one team.
 		// The variable team should be a string that is a baseball team (example: "Yankees")
 		this.team_count += 1;
+		console.log('TEAM COUNT', this.team_count)
 		if ( this.team_count >= 3 ) {
-			this.team_count = 0;
+			console.log('RESET TEAM COUNT', this.team_count)
+			this.team_count = 1;
 			this.table.innerHTML = '';
 		}
+		console.log(team)
 		var first_team=document.getElementById(team + '-2018');
 		first_team.innerHTML = first_team.innerHTML.replace(team, team + '&nbsp;2018');
 		this.table.appendChild(first_team)
