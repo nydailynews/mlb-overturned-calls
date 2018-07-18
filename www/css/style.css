@@ -43,7 +43,7 @@ table thead th {
     text-align: left;
 }
 tr > td {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     font-size: 18px;
 }
@@ -67,5 +67,19 @@ select {
   padding: 10px;
   font-size: 14px;
   margin: 10px auto;
+}
+
+svg.intralink {
+    height: 36px;
+    width: 36px;
+    position: relative;
+    top: 12px;
+    margin-left: -35px;
+    left: 9px;
+}
+
+article {
+	width: 800px;
+	margin: auto;
 }
 
