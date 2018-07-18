@@ -12,6 +12,7 @@ new Tablesort(document.getElementById('teams-overall'));
 
 var compare = {
 	table: document.getElementById('teams-compare'),
+	team_count: 0,
 	form_handler: function (select) {
 		//this inputs data
 		console.log(select)
@@ -23,12 +24,18 @@ var compare = {
 	add_team_table: function(team) {
 		// this allows you to get data for one team.
 		// The variable team should be a string that is a baseball team (example: "Yankees")
+		this.team_count += 1;
+		if ( this.team_count >= 3 ) {
+			this.team_count = 0;
+			this.table.innerHTML = '';
+		}
 		var first_team=document.getElementById(team + '-2018');
 		first_team.innerHTML = first_team.innerHTML.replace(team, team + '&nbsp;2018');
 		this.table.appendChild(first_team)
 		var first_team=document.getElementById(team + '-overall');
 		first_team.innerHTML = first_team.innerHTML.replace(team, team + '&nbsp;2014-2017')
 		this.table.appendChild(first_team)
+
 
 
 	},
@@ -40,8 +47,6 @@ var compare = {
 		this.add_team_table("Yankees")
 		var option=document.getElementById('team-two').value="Mets";
 		this.add_team_table("Mets")
-     
-
 	}
 };
 compare.init();
