@@ -203,6 +203,10 @@ th[role=columnheader]:not(.no-sort):hover:after {
 	opacity: 1;
 }
 
+.center 
+{
+    margin:auto;
+}
 table {
     font-family: 'Open Sans', sans-serif;
     border: 2px solid #eeeefe;
@@ -229,6 +233,11 @@ tr th {
 }
 tr:nth-child(even) {
     background-color: #eeeefe;
+}
+
+caption {
+    caption-side:bottom;
+
 }
 
 select {
