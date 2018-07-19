@@ -27,7 +27,10 @@ body {
     max-width: 900px;
     margin: auto;
 }
+img {
+    width: 800px;
 
+}
 
 article h1 {
     color: #030303;
