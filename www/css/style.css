@@ -27,7 +27,8 @@ body {
     max-width: 900px;
     margin: auto;
 }
-img {
+
+figure img {
     width: 800px;
 
 }
@@ -259,11 +260,44 @@ svg.intralink {
     position: relative;
     top: 12px;
     margin-left: -35px;
-    left: 9px;
+    left: 14px;
 }
 
 article {
 	width: 800px;
 	margin: auto;
+
+}
+
+@media only screen and (max-width: 800px){ 
+
+    figure img {
+    width: 100%;
+
+}
+
+    article {
+    width: 100%;
+    margin: auto;
+    padding: 0 5px 0 20px; 
+
+}
+
+    article h1{
+    line-height: 45px; 
+    padding-bottom: 20px;
+
+
+    }
+
+    table {
+    position: relative;
+    left:-16px;
+
+
+    }
+
+
+
 }
 
